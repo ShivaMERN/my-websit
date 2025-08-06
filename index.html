@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+<body>
+    <div class="cursor"></div>
+<header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">MyPortfolio</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    &#9776;
+                </button>
+                <ul class="nav-links" id="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+<li><a href="resume.pdf" class="nav-link" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                </ul>
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <p class="contact-name">Shivam Rakhonde</p>
+                        <p class="contact-phone">Phone: 7666968850</p>
+                        <p class="contact-email">Email: shivamrakhonde@gmail.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shivam-rakhonde-062043287/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ShivaMERN" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home-section">
+            <canvas id="particle-canvas"></canvas>
+            <div class="container">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-image" />
+                <h1>Hello, I'm Shivam Rakhonde</h1>
+                <p>Welcome to my portfolio website.</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="para">
+                    <p><b></b>"I am a creative Frontend Developer who loves transforming ideas
+                        into interactive and visually stunning websites. With expertise
+                        in HTML, CSS, JavaScript, and modern frameworks like React and Tailwind CSS,
+                        I craft responsive interfaces that deliver exceptional user experiences."</b></p>
+                </div>
+                <h2>About - Skills & Technologies</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="css.png" alt="CSS" style="width:100%; border-radius: 8px;" />
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="project-card">
+                        <img src="html.png" alt="HTML" style="width:100%; border-radius: 8px;" />
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="project-card">
+                        <img src="js.png" alt="JavaScript" style="width:100%; border-radius: 8px;" />
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="project-card">
+                        <img src="linux.jpg" alt="Linux OS" style="width:150%; border-radius: 8px;" />
+                        <h3>Linux OS</h3>
+                    </div>
+                    <div class="project-card">
+                        <img src="react.png" alt="React" style="width:100%; border-radius: 8px;" />
+                        <h3>React</h3>
+                    </div>
+                    <div class="project-card">
+                        <img src="SQL.png" alt="SQL Database" style="width:160%; border-radius: 8px;" />
+                        <h3>SQL Database</h3>
+                    </div>
+                    <div class="project-card">
+                        <img src="windows.jpg" alt="Windows OS" style="width:100%; border-radius: 8px;" />
+                        <h3>Windows OS</h3>
+                    </div>
+                    <div class="project-card">
+                        <img src="Python.png" alt="python" style="width:150%; border-radius: 8px;"  />
+                        <h3>Python</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="chat app.png" alt="Chat app" style="width:100%; border-radius: 8px;" />
+                        <h3>Chat App</h3>
+                        <p>It is a simple chat application for the web.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="snake game.jpg" alt="Snake Game" style="width:100%; border-radius: 8px;" />
+
+                        <h3>Snake Game</h3>
+                        <p>This is a simple snake game created using JavaScript and HTML/CSS.</p>
+                    </div>
+                
+                    <div class="project-card">
+                        <img src="hotel.jpg" alt="Hotel Project" style="width:100%; border-radius: 8px;" />
+                        <h3>Hotel Management Project</h3>
+                        <p>A project showcasing hotel booking system.</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="bill.jpeg" alt="Bill Project" style="width:100%; border-radius: 8px;" />
+                        <h3>Bill Generator Project</h3>
+                        <p>A project showcasing billing and invoicing system.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <canvas id="contact-particle-canvas"></canvas>
+                <h2>Contact Me</h2>
+                
+                <form id="contact-form" action="https://formspree.io/f/xwpqnbjd" method="POST">
+                    <div class="input">
+                        <input type="text" id="name" name="name" class="inside-input" placeholder="Your name" maxlength="50" required />
+                        <label for="name">Name</label>
+                        <span class="border"></span>
+                    </div>
+
+                    <div class="input">
+                        <input type="email" id="email" name="email" class="inside-input" placeholder="Your email" maxlength="100" required />
+                        <label for="email">Email</label>
+                        <span class="border"></span>
+                    </div>
+
+                    <div class="input">
+                        <input type="tel" id="contact-number" name="contact" class="inside-input" placeholder="Your contact number" maxlength="15" pattern="^\+?[0-9\s\-]{7,15}$" required />
+                        <label for="contact-number">Contact Number</label>
+                        <span class="border"></span>
+                    </div>
+
+                    <div class="input">
+                        <textarea id="message" name="message" class="inside-input" placeholder="Your message" maxlength="500" required></textarea>
+                        <label for="message">Message</label>
+                        <span class="border"></span>
+                    </div>
+
+                    
+                    <input type="hidden" name="_subject" value="New contact form submission from Portfolio" />
+                    <input type="hidden" name="_cc" value="shivamrakhonde@gmail.com" />
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Shivam RakhondeS. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shivam-rakhonde-062043287/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/shivam_rakhonde45/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
